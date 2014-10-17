@@ -92,7 +92,7 @@ module Guard
       end
 
       def build_rails_command
-        "rails server #{build_options}"
+        "bin/rails server -b 0.0.0.0 #{build_options}"
       end
 
       def without_bundler_env
